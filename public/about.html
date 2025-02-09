@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About - Sara's Portfolio</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    
-                </ul>
-            
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <main>
-
-            <h1>About</h1>
-            <p>My name is Sara. I am a web developer.</p>
-            <section id = "education">
+    </header>
+    <main>
+        <h1>About</h1>
+        <p>My name is Sara. I am a web developer.</p>
+        <section id="education">
             <h2>Education</h2>
             <div id="college">
                 <h3>National Institute of Technology, Hamirpur</h3>
-                <h4>Bachelors of Technology - Mathematics and Computing   <p>August 2023 -July 2027</p></h4>
-                <p>Grade : 8.78 (Top 10% in the department)</p>
-                <h5>Relevant CourseWork:</h5>
-                <p> Data Structures Algorithms, Object-Oriented Programming, Discrete Mathematics,
-                    Real Complex Analysis, Probability Statistics.</p>
-
+                <h4>Bachelors of Technology - Mathematics and Computing</h4>
+                <p>August 2023 - July 2027</p>
+                <p>Grade: 8.78 (Top 10% in the department)</p>
+                <h5>Relevant Coursework:</h5>
+                <p>Data Structures Algorithms, Object-Oriented Programming, Discrete Mathematics, Real Complex Analysis, Probability Statistics.</p>
             </div>
             <div id="school">
-                <h3>Himachal Pradesh Board Of Secondary Education. </h3> 
+                <h3>Himachal Pradesh Board Of Secondary Education</h3>
                 <h4>2022-2023</h4>
-                <p> Marks: 452/500</p>
+                <p>Marks: 452/500</p>
             </div>
-            </section>
-        </main>
-    </header>
+        </section>
+    </main>
     <footer>
         <p>&copy; <span id="year">2025</span> Sara | Portfolio. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Update the year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
