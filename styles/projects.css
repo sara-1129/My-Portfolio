@@ -2,41 +2,20 @@
     margin : 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
-header
-{
-    height:60px;
-    width:100%;
-    background-color: #D8315B;
-    color: #FFFAFF;
-   
-    
-}
+body {
+    background-image: url('../assets/rm218-bb-07.jpg');
+    color:aliceblue;
+    background-size: cover;
+    background-attachment: fixed;
+  
+  }
 
-nav{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-
-}
-.main-heading
-{
-    display:flex;
-    align-items: center;
-}
-.nav-list{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    list-style-type:none;
-    margin-right: 20px;
-    gap: 20px;
-}
-.nav-item a{
-    color:#FFFAFF;
-    text-decoration:none;
-    font-size: 20px;
-}
+  .nav-pills .nav-link.active {
+    background-color: #310dfd;
+    color: white;
+  }
+  .nav-pills .nav-link {
+    color: white;
+  }
