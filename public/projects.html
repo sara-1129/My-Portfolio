@@ -5,34 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <!-- Add a favicon -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <!-- Add a favicon -->
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
 </head>
 
 <body>
-    <section id = "header">
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center  py-3 mb-4 border-bottom " >
-              <a href="#about" class="d-flex align-items-center px-3 mb-3 mb-md-0 me-md-auto link-light text-decoration-none">
-                <img src="../assets/favicon.svg" alt="favicon" height="40" class="me-2">
-                <header>
-                    <span>Sara | Aspiring Full-Stack Developer</span>
-                  </header>
+    <!-- Header/Navigation -->
+<section id="header">
+  <div class="container">
+      <nav class="navbar navbar-expand-md py-3 mb-4 border-bottom">
+          <div class="container-fluid">
+              <a href="/" class="d-flex align-items-center me-md-auto text-decoration-none navbar-brand">
+                  <img src="../assets/favicon.svg" alt="Sara's Logo" height="40" class="me-2">
+                  <span class="fs-4 text-light">Sara | Aspiring Frontend Developer</span>
               </a>
-        
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
-                <!-- <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li> -->
-                <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
-              </ul>
-            </header>
+
+              <!-- Mobile toggle button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar content that will collapse -->
+              <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-pills align-items-center">
+                      <li class="nav-item">
+                          <a href="../index.html" class="nav-link active" aria-current="page">Home</a>
+                      </li>
+                     
+                    
+                      <li class="nav-item ms-md-2 mt-2 mt-md-0">
+                          <a href="path/to/resume.pdf" class="btn btn-outline-light" download>
+                              <i class="fas fa-download me-1"></i> Resume
+                          </a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-    </section>
+      </nav>
+  </div>
+</section>
     <main>
         
 

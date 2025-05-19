@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara's Portfolio</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    
+    <title> My Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
     <!-- Header/Navigation -->
     <section id="header">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                    <img src="assets/favicon.svg" alt="Sara's Logo" height="40" class="me-2">
-                    <span class="fs-4 text-light">Sara | Aspiring Full-Stack Developer</span>
-                </a>
-        
-                <ul class="nav nav-pills align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="./public/skills.html" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="./public/projects.html" class="nav-link">Projects</a></li>
-                    <li class="nav-item ms-2">
-                        <a href="https://github.com/sara-1129" target="_blank" class="btn btn-outline-light">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </li>
-                </ul>
-            </header>
+            <nav class="navbar navbar-expand-md py-3 mb-4 border-bottom">
+                <div class="container-fluid">
+                    <a href="/" class="d-flex align-items-center me-md-auto text-decoration-none navbar-brand">
+                        <img src="assets/favicon.svg" alt="Sara's Logo" height="40" class="me-2">
+                        <span class="fs-4 text-light">MY PORTFOLIO</span>
+                    </a>
+
+                    <!-- Mobile toggle button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar content that will collapse -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-pills align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./public/projects.html" class="nav-link">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item ms-md-2 mt-2 mt-md-0">
+                                <a href="path/to/resume.pdf" class="btn btn-outline-light" download>
+                                    <i class="fas fa-download me-1"></i> Resume
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="container">
         <!-- Hero Section -->
-        <section id="hero" class="py-5 text-center">
+        <section id="hero" class="py-4 text-center">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <img src="assets/profile-pic.jpg" alt="Sara's Profile Picture" class="rounded-circle mb-4" width="200" height="200">
+                    <img src="assets/mypic.jpg" alt="Sara's Profile Picture" class="rounded-circle mb-4" width="200" height="200">
                     <h1 class="fw-light">Hi, I'm Sara</h1>
-                    <p class="lead text-muted">Aspiring Frontend Developer passionate about creating beautiful, functional web applications.</p>
+                    <p class="lead text-secondary">Aspiring Frontend Developer passionate about creating beautiful, functional web applications.</p>
                     <p>
                         <a href="#about" class="btn btn-primary my-2">Learn more about me</a>
                         <a href="./public/projects.html" class="btn btn-outline-secondary my-2">View my projects</a>
@@ -62,49 +85,145 @@
         <section id="about" class="py-5 border-top">
             <div class="row">
                 <div class="col-lg-6">
-                  <h2>About Me</h2>
-                  <p>I'm a frontend developer in training, currently focused on two parallel learning paths: building my foundation in Data Structures and Algorithms with C++, while simultaneously developing my frontend skills through practical projects.</p>
-                  <p>I'm passionate about creating clean, efficient code and intuitive user interfaces that deliver great experiences across all devices.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, writing or enjoying outdoor activities.</p>
+                    <h2>About Me</h2>
+                    <p>I'm a frontend developer in training, currently focused on two parallel learning paths: building
+                        my foundation in Data Structures and Algorithms with C++, while simultaneously developing my
+                        frontend skills through practical projects.</p>
+                    <p>I'm passionate about creating clean, efficient code and intuitive user interfaces that deliver
+                        great experiences across all devices.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, writing or enjoying outdoor activities.</p>
                 </div>
                 <div class="col-lg-6">
-                  <h3>Quick Facts</h3>
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item bg-transparent text-light">
-                          <i class="fas fa-map-marker-alt me-2"></i>📍 Based in Mandi, Himachal Pradesh
-                      </li>
-                      <li class="list-group-item bg-transparent text-light">
-                          <i class="fas fa-graduation-cap me-2"></i>🎓 B.Tech in Mathematics & Scientific Computing at NIT Hamirpur
-                      </li>
-                      <li class="list-group-item bg-transparent text-light">
-                          <i class="fas fa-code me-2"></i>💻 1 year of coding experience
-                      </li>
-                      <li class="list-group-item bg-transparent text-light">
-                          <i class="fas fa-lightbulb me-2"></i>🌟 Currently learning Frontend Development & DSA in C++
-                      </li>
-                  </ul>
-              </div>
+                    <h3>Quick Facts</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent text-light">
+                            <i class="fas fa-map-marker-alt me-2"></i>📍 Based in Mandi, Himachal Pradesh
+                        </li>
+                        <li class="list-group-item bg-transparent text-light">
+                            <i class="fas fa-graduation-cap me-2"></i>🎓 B.Tech in Mathematics & Scientific Computing at
+                            NIT Hamirpur(2023-2027)
+                        </li>
+                        <li class="list-group-item bg-transparent text-light">
+                            <i class="fas fa-code me-2"></i>💻 1 year of coding experience
+                        </li>
+                        <li class="list-group-item bg-transparent text-light">
+                            <i class="fas fa-lightbulb me-2"></i>🌟 Currently learning Frontend Development & DSA in C++
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 border-top text-light">
+            <h2 class="text-center  mb-5">My Skills</h2>
+            <div class="row">
+                <!-- Frontend Skills -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-transparent border-light ">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h3 class="text-light">Web Development</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li><i class="fas fa-check text-success me-2"></i>HTML5</li>
+                                <li><i class="fas fa-check text-success me-2"></i>CSS3</li>
+                                <li><i class="fas fa-check text-success me-2"></i>JavaScript(learning)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Bootstrap</li>
+                                <!-- <li><i class="fas fa-book text-info me-2"></i>React (Learning)</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-transparent border-light">
+                        <div class="card-body text-center">
+                            <i class="fas fa-server fa-3x mb-3 text-primary"></i>
+                            <h3 class="text-light">Programming Languages</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li><i class="fas fa-check text-success me-2"></i>C/C++</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Python</li>
+                                <!-- <li><i class="fas fa-book text-info me-2"></i>Node.js (Learning)</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-transparent border-light">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                            <h3 class="text-light">Tools</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li><i class="fas fa-check text-success me-2"></i>Git & GitHub</li>
+                                <li><i class="fas fa-check text-success me-2"></i>VS Code</li>
+                                <!-- <li><i class="fas fa-check text-success me-2"></i>Figma</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Postman</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 border-top">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control bg-dark text-light" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-dark text-light" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control bg-dark text-light" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h4>Or connect directly</h4>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <a href="mailto:sarasaini3116@gmail.com" class="btn btn-outline-light">
+                        <i class="fas fa-envelope me-2"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/sara-37009a290/" class="btn btn-outline-light">
+                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/sara-1129" class="btn btn-outline-light">
+                        <i class="fab fa-github me-2"></i> GitHub
+                    </a>
+                </div>
             </div>
         </section>
     </main>
-
     <!-- Footer -->
-    <footer class="py-3 mt-4 border-top">
+    <footer class="py-3 mt-4 border-secondary">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <p class="col-md-4 mb-0 text-muted">© <span id="current-year">2023</span> Sara's Portfolio</p>
+            <p class="col-md-4 mb-0 text-secondary">© <span id="current-year">2025</span> Sara's Portfolio</p>
             
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
-                <li class="nav-item"><a href="./public/skills.html" class="nav-link px-2 text-muted">Skills</a></li>
-                <li class="nav-item"><a href="./public/projects.html" class="nav-link px-2 text-muted">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-secondary">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link px-2 text-secondary">Skills</a></li>
+                <li class="nav-item"><a href="./public/projects.html" class="nav-link px-2 text-secondary">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-secondary">Contact</a></li>
             </ul>
             
             <div class="col-md-4 d-flex justify-content-end">
-                <!-- <a href="#" class="me-3 text-muted"><i class="fab fa-instagram fa-lg"></i></a> -->
-                <a href="https://www.linkedin.com/in/sara-37009a290/" class="me-3 text-muted"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="https://github.com/sara-1129" class="me-3 text-muted"><i class="fab fa-github fa-lg"></i></a>
-                <a href="mailto:sarasaini3116@gmail.com" class="text-muted"><i class="fas fa-envelope fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/sara-37009a290/" class="me-3 text-secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/sara-1129" class="me-3 text-secondary"><i class="fab fa-github fa-lg"></i></a>
+                <a href="mailto:sarasaini3116@gmail.com" class="text-secondary"><i class="fas fa-envelope fa-lg"></i></a>
             </div>
         </div>
     </footer>
@@ -120,7 +239,19 @@
             if (yearElement) {
                 yearElement.textContent = new Date().getFullYear();
             }
+            
+            // Simple form handling
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
         });
     </script>
+
 </body>
+
 </html>
