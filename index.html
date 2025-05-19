@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dark-bs-theme="dark" >
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -8,42 +8,119 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Add a favicon -->
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body >
-    <section id = "header">
+<body>
+    <!-- Header/Navigation -->
+    <section id="header">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none">
-                <img src="assets/favicon.svg" alt="favicon" height="40" class="me-2">
-                <header>
-                    <span >Sara | Aspiring Full-Stack Developer</span>
-                    
-                  </header>
-              </a>
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <img src="assets/favicon.svg" alt="Sara's Logo" height="40" class="me-2">
+                    <span class="fs-4 text-light">Sara | Aspiring Full-Stack Developer</span>
+                </a>
         
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#index.html" class="nav-link active " aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="./public/skills.html" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="./public/projects.html" class="nav-link">Projects</a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
-              </ul>
+                <ul class="nav nav-pills align-items-center">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./public/skills.html" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="./public/projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="https://github.com/sara-1129" target="_blank" class="btn btn-outline-light">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
             </header>
-          </div>
+        </div>
     </section>
 
-    <main>
-        
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="py-5 text-center">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <img src="assets/profile-pic.jpg" alt="Sara's Profile Picture" class="rounded-circle mb-4" width="200" height="200">
+                    <h1 class="fw-light">Hi, I'm Sara</h1>
+                    <p class="lead text-muted">Aspiring Frontend Developer passionate about creating beautiful, functional web applications.</p>
+                    <p>
+                        <a href="#about" class="btn btn-primary my-2">Learn more about me</a>
+                        <a href="./public/projects.html" class="btn btn-outline-secondary my-2">View my projects</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        
+        <!-- About Section -->
+        <section id="about" class="py-5 border-top">
+            <div class="row">
+                <div class="col-lg-6">
+                  <h2>About Me</h2>
+                  <p>I'm a frontend developer in training, currently focused on two parallel learning paths: building my foundation in Data Structures and Algorithms with C++, while simultaneously developing my frontend skills through practical projects.</p>
+                  <p>I'm passionate about creating clean, efficient code and intuitive user interfaces that deliver great experiences across all devices.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, writing or enjoying outdoor activities.</p>
+                </div>
+                <div class="col-lg-6">
+                  <h3>Quick Facts</h3>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-transparent text-light">
+                          <i class="fas fa-map-marker-alt me-2"></i>📍 Based in Mandi, Himachal Pradesh
+                      </li>
+                      <li class="list-group-item bg-transparent text-light">
+                          <i class="fas fa-graduation-cap me-2"></i>🎓 B.Tech in Mathematics & Scientific Computing at NIT Hamirpur
+                      </li>
+                      <li class="list-group-item bg-transparent text-light">
+                          <i class="fas fa-code me-2"></i>💻 1 year of coding experience
+                      </li>
+                      <li class="list-group-item bg-transparent text-light">
+                          <i class="fas fa-lightbulb me-2"></i>🌟 Currently learning Frontend Development & DSA in C++
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="py-3 mt-4 border-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <p class="col-md-4 mb-0 text-muted">© <span id="current-year">2023</span> Sara's Portfolio</p>
+            
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="./public/skills.html" class="nav-link px-2 text-muted">Skills</a></li>
+                <li class="nav-item"><a href="./public/projects.html" class="nav-link px-2 text-muted">Projects</a></li>
+            </ul>
+            
+            <div class="col-md-4 d-flex justify-content-end">
+                <!-- <a href="#" class="me-3 text-muted"><i class="fab fa-instagram fa-lg"></i></a> -->
+                <a href="https://www.linkedin.com/in/sara-37009a290/" class="me-3 text-muted"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/sara-1129" class="me-3 text-muted"><i class="fab fa-github fa-lg"></i></a>
+                <a href="mailto:sarasaini3116@gmail.com" class="text-muted"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-        
+    <!-- Year Update Script -->
+    <script>
+        // Update copyright year automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 </body>
-
 </html>
