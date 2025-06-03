@@ -1,4 +1,4 @@
-/* ===== Base & Reset Styles ===== */
+
 :root {
   --primary-color: #310dfd;
   --text-color: aliceblue;
@@ -24,7 +24,6 @@ body {
 
 }
 
-
 body::before {
   content: '';
   position: fixed;
@@ -32,11 +31,21 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    linear-gradient(var(--bg-overlay), var(--bg-overlay)),
-    url('assets/background.jpg') center/cover fixed;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: -1;
 }
+  body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-overlay);
+  z-index: -1;
+} 
 
 /* ===== Navigation Styles ===== */
 .nav-pills {
